@@ -112,6 +112,14 @@ Integer、Double不能直接进行比较，这包括：
          void drive(Car car){ ... }
          void drive(Bus bus){ ... }
          void drive(Truck truck){ ... }
+         ...
+     }
+
+     //这样对开发者来说会显得繁琐
+
+     //多态
+     class Driver {
+         void drive(Vehicle vehicle){ ... }
      }
      ```
 3. 继承：使用```extends```使子类继承父类的特征（属性）和行为（方法）
